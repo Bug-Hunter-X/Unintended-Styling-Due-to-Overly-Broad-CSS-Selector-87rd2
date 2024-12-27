@@ -1,0 +1,19 @@
+/* bugSolution.css */
+.container {
+  background-color: lightgray; /* Original style */
+}
+
+.container p {
+  color: blue; /* Original style*/
+}
+
+/* Incorrectly broad selector causing the bug */
+p {
+  color: red; /* This is removed in the solution, and replaced by the one below */
+}
+
+/* Correct selector, only styling p tags within .container */
+.container p {
+  color: blue;
+}
+/*Add any extra style that would not affect the container. Ensure that the selector does not overlap with the container's.  If so, change the selector */
